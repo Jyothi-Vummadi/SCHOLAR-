@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>SCHOLAR+</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="{% url 'homepage' %}"><img src="/static/images/logo.png" class="logo"></a>
+                <ul>
+                {% if request.user.is_authenticated %}
+                    <li><a href="{% url 'changepassword' %}"><b>CHANGE PASSWORD</b></a></li>
+                    <li><a href="{% url 'logout' %}"><b>LOGOUT</b></a></li>
+                {% endif %}
+                </ul>
+            </div>
+            <div class = "content">
+               
+                <h1> ABOUT US</h1>
+                <P> Scholar+ is all about providing young adults the required tools and materials so 
+                that they can progress in their respective careers and come out as professional 
+                cosmopolitans. We guide you by :
+                </P>
+                <ul>
+                 <li> ~ Providing video lectures from the best mentors</li>
+                 <li> ~ Providing written material to enhance your memory</li>
+                 <li> ~ Providing a To-Do list so you never forget the tasks at your hand</li>
+                </ul>
+                <P>    
+                We hope you have a happy learning here at Scholar+
+                </P>
+                {% if request.user.is_authenticated %}
+                <div>
+              <button type="button"><span></span> <a href="{% url 'homepage' %}"style="color:white">HOME</a></button>
+              <button type="button"><span></span> <a href="{% url 'profile' %}"style="color:white">PROFILE</a></button>
+            </div>
+            {% else %}
+            <div>
+            <button type="button"><span></span> <a href="{% url 'login' %}"style="color:white">LOGIN</a></button>
+            <button type="button"><span></span> <a href="{% url 'userregistration' %}"style="color:white">REGISTER </a></button>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
+
