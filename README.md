@@ -1,6 +1,19 @@
 # SCHOLAR+
 A student portal that helps students find related notes, lecture videos &amp; make customised to-do lists.
 
+# Team Members
+~ Jyothi Vummadi (Team Lead) <br />
+College : BVRIT Hyderabad College of Engineering for Women <br />
+
+~ Aishwarya Autkar <br />
+College : Sinhgad Academy Of Engineering <br />
+
+~ Vaishnavi Janumpally <br />
+College : Vasavi College of Engineering <br />
+
+~ Pranathi Rachakonda <br />
+College : BVRIT Hyderabad College of Engineering for Women <br />
+
 # Tech Stack
 Python <br />
 Html <br />
